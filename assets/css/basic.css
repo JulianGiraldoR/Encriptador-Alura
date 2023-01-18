@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--base);
+  color: var(--font-dark);
+  min-height: 100vh;
+}
+.container {
+ 
+  height: max-content;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  
+  
+}
+
+/*Estilos en las fuentes*/
+:root {
+--base: #f1f2f0;
+--darker: #1d1d32;
+--font-dark: #192130;
+--font-info: #78797e;
+--font-light: #f1f1f1;
+--hover-copy: #6c6f82;
+--button: #66677b;
+--hover-button: #554dc5;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+h6 {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--font-info);
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+ .mostrar-texto, #text-area {
+  color: var(--font-dark);
+}
+/*Estilos del logo y Header*/
+
+.logo {
+  background-color: var(--darker);
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.logo__h2, .footer__h3 {
+  color: var(--font-light);
+}
+
+/*Estilos del pie de página*/
+
+.footer {
+  
+  display: flex;
+  background-color: var(--darker);
+  height: 6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.footer__h3 {
+  font-size: 18px;
+}
+
